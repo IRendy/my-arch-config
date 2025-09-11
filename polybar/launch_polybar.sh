@@ -3,10 +3,12 @@
 # 检查 xrandr 是否可用
 if type "xrandr" >/dev/null; then
   # 获取主显示器名称（标记为 "primary" 的）
-  PRIMARY=$(xrandr --query | grep " connected primary" | cut -d" " -f1)
+  #PRIMARY=$(xrandr --query | grep " connected primary" | cut -d" " -f1)
+  PRIMARY=$(xrandr --query | grep "DP-4 connected 2560x1600+0+0" | cut -d" " -f1)
 
   # 获取其他已连接的非主显示器（按连接顺序，取第一个）
-  SECONDARY=$(xrandr --query | grep " connected" | grep -v "primary" | cut -d" " -f1 | head -n1)
+  #SECONDARY=$(xrandr --query | grep " connected" | grep -v "primary" | cut -d" " -f1 | head -n1)
+  SECONDARY=$(xrandr --query | grep "HDMI-0 connected 1920x1080+2560+0" | grep -v "primary" | cut -d" " -f1 | head -n1)
 
   # 在主显示器启动 main bar
   if [ -n "$PRIMARY" ]; then

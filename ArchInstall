@@ -2,48 +2,48 @@
 
 echo "Update pacman"
 sudo pacman -Syu &&
-echo "Install base config" &&
-# base system config
-sudo pacman -S ntfs-3g &&
-sudo pacman -S archlinuxcn-keyring && # cn 源中的签名（archlinuxcn-keyring 在 archlinuxcn）
-sudo pacman -S yay &&                 # yay 命令可以让用户安装 AUR 中的软件（yay 在 archlinuxcn）
+  echo "Install base config" &&
+  # base system config
+  sudo pacman -S ntfs-3g &&
+  sudo pacman -S archlinuxcn-keyring && # cn 源中的签名（archlinuxcn-keyring 在 archlinuxcn）
+  sudo pacman -S yay &&                 # yay 命令可以让用户安装 AUR 中的软件（yay 在 archlinuxcn）
 
-# base desktop tools
-echo "Install desktop tools" &&
-sudo pacman -S xorg xorg-xinit bspwm sxhkd polybar picom dunst xdg-desktop-portal networkmanager network-manager-applet &&
-# 壁纸
-sudo pacman -S mpv xwinwrap feh &&
-# 截图和终端
-sudo flameshot maim xclip kitty rofi &&
-sudo pacman -S firefox vim emacs &&
+  # base desktop tools
+  echo "Install desktop tools" &&
+  sudo pacman -S xorg xorg-xinit bspwm sxhkd polybar picom dunst xdg-desktop-portal networkmanager network-manager-applet &&
+  # 壁纸
+  sudo pacman -S mpv xwinwrap feh &&
+  # 截图和终端
+  sudo flameshot maim xclip kitty rofi &&
+  sudo pacman -S firefox vim emacs &&
 
-# input method
-sudo pacman -S fcitx5 &&                # 输入法基础包组
-sudo pacman -S fcitx5-chinese-addons && # 官方中文输入引擎
-sudo pacman -S fcitx5-gtk fcitx5-qt &&
-sudo pacman -S fcitx5-configtool &&
+  # input method
+  sudo pacman -S fcitx5 &&                # 输入法基础包组
+  sudo pacman -S fcitx5-chinese-addons && # 官方中文输入引擎
+  sudo pacman -S fcitx5-gtk fcitx5-qt &&
+  sudo pacman -S fcitx5-configtool &&
 
-# pulseaudio
-yay -S pulseaudio pavucontrol &&
+  # pulseaudio
+  yay -S pulseaudio pavucontrol &&
 
-# mount
-sudo pacman -S udisks2 udiskie &&
+  # mount
+  sudo pacman -S udisks2 udiskie &&
 
-# nvidia
-sudo pacman -S nvidia nvidia-settings nvidia-utils nvidia-prime &&
-echo "Install font packages" &&
+  # nvidia
+  sudo pacman -S nvidia nvidia-settings nvidia-utils nvidia-prime &&
+  echo "Install font packages" &&
 
-# install font
-yay -S adobe-source-code-pro-font adobe-source-han-serif-cn-fonts &&
+  # install font
+  yay -S adobe-source-code-pro-font adobe-source-han-serif-cn-fonts &&
 
-# 安装谷歌开源字体及表情
-yay -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra &&
+  # 安装谷歌开源字体及表情
+  yay -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra &&
 
-# 可能需要代理下载
-yay -S ttf-lxgw-neo-xihei-screen-full ttf-lxgw-wenkai-screen wqy-zenhei ttf-jetbrains-mono &&
+  # 可能需要代理下载
+  yay -S ttf-lxgw-neo-xihei-screen-full ttf-lxgw-wenkai-screen wqy-zenhei ttf-jetbrains-mono &&
 
-# clash
-#yay -S clash-verge-rev-bin
+  # clash
+  #yay -S clash-verge-rev-bin
 
-# desktop xinit
-echo "exec bspwm" >~/.xinitrc
+  # desktop xinit
+  echo "exec bspwm" >~/.xinitrc
