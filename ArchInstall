@@ -53,7 +53,7 @@ yay -S ttf-lxgw-neo-xihei-screen-full ttf-lxgw-wenkai-screen wqy-zenhei ttf-jetb
 echo "exec bspwm" >~/.xinitrc
 
 # Install WPS Office
-yay -S wps-office-cn
-yay -S wps-office-mui-zh-cn
-yay -S ttf-wps-fonts
-yay -S libtiff5
+# yay -S wps-office-cn
+# yay -S wps-office-mui-zh-cn
+# yay -S ttf-wps-fonts
+# yay -S libtiff5
