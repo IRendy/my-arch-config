@@ -47,13 +47,15 @@ yay -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra &&
 yay -S ttf-lxgw-neo-xihei-screen-full ttf-lxgw-wenkai-screen wqy-zenhei ttf-jetbrains-mono &&
 
 # clash
-#yay -S clash-verge-rev-bin
+# yay -S clash-verge-rev-bin
 
 # desktop xinit
 echo "exec bspwm" >~/.xinitrc
 
 # Install WPS Office
+# echo "Install WPS Office"
 # yay -S wps-office-cn
 # yay -S wps-office-mui-zh-cn
 # yay -S ttf-wps-fonts
 # yay -S libtiff5
+# echo "\n[General]\nlanguages=zh_CN" >> ~/.config/Kingsoft/Office.conf
