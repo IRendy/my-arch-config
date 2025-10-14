@@ -150,3 +150,5 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
   backlight_control -1
 
+XF86Calculator
+  bc

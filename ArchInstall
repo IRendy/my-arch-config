@@ -29,6 +29,10 @@ yay -S pulseaudio pavucontrol &&
 # mount
 sudo pacman -S udisks2 udiskie &&
 
+# archiving and compression
+sudo pacman -S zip unzip rar unrar 7zip
+
+
 # nvidia
 sudo pacman -S nvidia nvidia-settings nvidia-utils nvidia-prime &&
 echo "Install font packages" &&
@@ -47,3 +51,9 @@ yay -S ttf-lxgw-neo-xihei-screen-full ttf-lxgw-wenkai-screen wqy-zenhei ttf-jetb
 
 # desktop xinit
 echo "exec bspwm" >~/.xinitrc
+
+# Install WPS Office
+yay -S wps-office-cn
+yay -S wps-office-mui-zh-cn
+yay -S ttf-wps-fonts
+yay -S libtiff5
