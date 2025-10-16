@@ -59,3 +59,6 @@ echo "exec bspwm" >~/.xinitrc
 # yay -S ttf-wps-fonts
 # yay -S libtiff5
 # echo "\n[General]\nlanguages=zh_CN" >> ~/.config/Kingsoft/Office.conf
+
+# Solve WARNING: Possibly missing firmware for some modules
+# yay -S mkinitcpio-firmware
